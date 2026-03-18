@@ -6,7 +6,7 @@
 2. 访问侧边栏中的 API 功能，在页面中点击 **创建API Key**
 3. 复制创建的 **API Key** 到 BAIclaw 中
 
-![](Pasted%20image%2020260317232256.png)
+![](./assets/Pasted%20image%2020260317232256.png)
 
 
 > [!warning] 请妥善保管你的 API Key
