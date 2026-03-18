@@ -7,7 +7,7 @@
 	- 按提示输入并创建 bot（**必须以 `bot` 结尾**，例如 `myclaw123bot`）
 	- 成功后复制 **Bot Token**（格式：`123456:ABCdef...`）并粘贴在 **机器人令牌** 输入框中
 
-![](Pasted%20image%2020260319003834.png)
+![](./assets/Pasted%20image%2020260319003834.png)
 
 3. 获取用户ID
 	- 搜索并打开 **@userinfobot** 并点击开始
