@@ -1,4 +1,9 @@
-# BAIclaw
+---
+id: baiclaw-intro
+title: BAIclaw
+sidebar_position: 1
+slug: /
+---
 
 ## Introduction
 
