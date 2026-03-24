@@ -5,13 +5,40 @@ sidebar_position: 1
 slug: /
 ---
 
-# BAIclaw
+# BAIclaw 简介
 
-## 简介
+## BAIclaw 是什么？
 
-**BAIclaw** 是一款基于 [OpenClaw](https://openclaw.ai/) 和 [ClawX](https://github.com/ValueCell-ai/ClawX/blob/main/README.md) 打造的个人 AI 智能体应用。BAIclaw 继承了 OpenClaw 的核心能力，并为用户提供了开箱即用的体验和图形化操作界面。
+**BAIclaw** 是一款个人 AI 智能体应用。它让 AI 能够帮你处理日常任务——查资料、处理文件、发送消息、执行自动化工作流——而你只需要用自然语言告诉它做什么。无需编写代码，无需配置复杂的环境。
 
-更多使用技巧请参考 [OpenClaw 文档](https://docs.openclaw.ai/)。
+## 为什么需要 BAIclaw？
+
+传统的 AI 智能体工具（如 OpenClaw）功能强大，但需要：
+
+- 安装 Node.js、Python 等开发环境
+- 编辑 YAML 配置文件
+- 使用终端命令启动和管理
+
+**BAIclaw 把这些都简化了。** 它基于 [OpenClaw](https://openclaw.ai/) 和 [ClawX](https://github.com/ValueCell-ai/ClawX/blob/main/README.md) 构建，保留了全部能力，但用图形界面替代了所有命令行操作。你只需要下载、安装、填入 API key，就可以开始对话。
+
+## 能做什么
+
+| 能力 | 说明 |
+|------|------|
+| **对话** | 与 AI 智能体自然语言交流，支持上下文记忆 |
+| **技能** | 扩展能力，如处理 PDF、搜索网页、控制浏览器 |
+| **频道** | 连接 Telegram、Discord 等，让 AI 能收发消息 |
+| **自动化** | 设置定时任务，让 AI 自动执行重复工作 |
+
+---
+
+## 适合谁用
+
+- **不想折腾技术细节** —— 只想快速用上 AI 助手
+- **需要自动化处理** —— 定时任务、文件处理、信息收集
+- **希望 AI 能联动外部工具** —— 通过频道与其他平台协作
+
+如果你熟悉命令行、喜欢自己配置，或者需要深度定制，原始版的 [OpenClaw](https://openclaw.ai/) 可能更适合你，更多使用技巧请参考 [OpenClaw 文档](https://docs.openclaw.ai/)。
 
 ---
 
