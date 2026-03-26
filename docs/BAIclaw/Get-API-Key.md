@@ -27,6 +27,13 @@ To use BAIclaw, you need an API Key from BANK OF AI. This key authenticates your
 2. Paste your copied API Key into the BANK OF AI API Key field
 3. Click **Save** or **Verify** to confirm the connection
 
+:::danger[Security Warning]
+**Keep your API Key safe at all times:**
+- The API Key is a critical credential for accessing the BANK OF AI model interface. Never share it with third parties.
+- If leaked, unauthorized parties may consume your quota, resulting in unexpected charges. The account holder is responsible for any losses incurred.
+- If you suspect your API Key has been compromised, delete it immediately in the BANK OF AI console, create a new one, and update the key in BAIclaw.
+:::
+
 ## Verification
 
 To verify your API Key is working:
@@ -48,9 +55,4 @@ Once your API Key is configured:
 - [Set up your first agent](./BAIclaw-Introduction.md#multi-agent-collaboration)
 - Explore the [Skills](./BAIclaw-Introduction.md#plug-and-play-skills) available to extend capabilities
 
-:::danger[Security Warning]
-**Keep your API Key safe at all times:**
-- The API Key is a critical credential for accessing the BANK OF AI model interface. Never share it with third parties.
-- If leaked, unauthorized parties may consume your quota, resulting in unexpected charges. The account holder is responsible for any losses incurred.
-- If you suspect your API Key has been compromised, delete it immediately in the BANK OF AI console, create a new one, and update the key in BAIclaw.
-:::
+

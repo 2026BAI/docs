@@ -1,6 +1,6 @@
 ---
 id: baiclaw-intro
-title: BAIclaw
+title: BAIclaw Intro
 sidebar_position: 1
 slug: /
 ---
