@@ -5,79 +5,100 @@ sidebar_position: 1
 slug: /
 ---
 
-## BAIclaw Introduction
+# BAIclaw Introduction
 
-**BAIclaw** is a personal AI agent application built on [OpenClaw](https://openclaw.ai/) and [ClawX](https://github.com/ValueCell-ai/ClawX/blob/main/README.md). BAIclaw inherits the core capabilities of OpenClaw while providing users with an out-of-the-box experience and graphical user interface.
+BAIclaw is a personal AI agent desktop application built on [OpenClaw](https://openclaw.ai/) and [ClawX](https://github.com/ValueCell-ai/ClawX/blob/main/README.md). It combines the power of OpenClaw with a graphical user interface, enabling users to have a complete personal AI assistant without writing code or configuration files.
 
-For more tips and tricks, refer to the [OpenClaw Documentation](https://docs.openclaw.ai/).
+## The Problem It Solves
 
----
+Traditional AI tools often face these challenges:
 
-## Core Features
+- **Complex Configuration**: Requires manually editing configuration files and using command-line operations
+- **Limited Capabilities**: Only capable of conversation, unable to connect to external services or execute tasks automatically
+- **Difficult Extension**: Adding new features requires programming knowledge
 
-### 🎯 Out-of-the-Box
+BAIclaw's design philosophy is to make AI agents **work out of the box** like ordinary applications, while retaining sufficient flexibility and extensibility.
 
-Complete all configurations from installation to conversation entirely through the graphical user interface (GUI), with no need to execute terminal commands or manually write configuration files.
+## Architecture
 
-### 💬 Smart Interaction Interface
+```
+┌─────────────────────────────────────┐
+│           BAIclaw (GUI)             │  ← Graphical Interface, Zero-Config Experience
+├─────────────────────────────────────┤
+│            OpenClaw                 │  ← Agent Runtime, Extension Framework
+├─────────────────────────────────────┤
+│      BANK OF AI LLM API             │  ← Intelligence Source
+└─────────────────────────────────────┘
+```
 
-- **Immersive Experience:** Supports multi-session context management, history retention, and Markdown rich text rendering.
-- **Agent Direct Routing:** Supports precise routing via the `@agent` command in the main input box. After switching, you'll directly enter the target Agent's independent conversation context, rather than being forwarded through the default Agent.
+- **OpenClaw**: Provides core capabilities including agent runtime, multi-channel communication, and task scheduling
+- **BAIclaw**: Graphical wrapper that presents these capabilities through an intuitive interface
 
-### 📡 Channel Management
+## Core Design
 
-- **Independent Operation:** Supports configuring multiple independently running AI channels to adapt to specific task flows.
-- **Account Binding:** Each channel supports multi-account management. Users can complete Agent account binding and default account switching directly on the Channels page.
+### Multi-Agent Collaboration
 
-### ⏰ Automated Scheduling
+Unlike a single chatbot, BAIclaw supports configuring multiple specialized agents:
 
-Customizable triggers and time intervals, combined with preset scheduled tasks, enable AI Agents to perform 7×24 hour uninterrupted automated execution.
+- Each agent has independent system prompts and context memory
+- Quick switching via the `@agent` command, directly entering that agent's conversation context
+- Different tasks can be routed to the most suitable agent for processing
 
-### 🧩 Skill Extension System
+### Channel-Based Communication
 
-- **No Package Manager Required:** Built-in integrated skill panel, supporting skill browsing, installation, and management.
-- **Pre-installed Skills:** Automatically deploys document processing skills (PDF, XLSX, DOCX, PPTX) and common search skills to the managed directory (default `~/.openclaw/skills`) on startup.
-- **Source Tracking:** Automatically identifies and displays skill sources from the managed directory, workspace, and additional directories, supporting direct navigation to the skill's physical installation path.
+BAIclaw extends AI capabilities to the external world through **channels**:
 
-### ⚙️ System Settings
+- **Local Channel**: Chat interface within the desktop application
+- **Messaging Platforms**: Bidirectional message synchronization with Telegram, Discord, WhatsApp, and other platforms
+- **Each channel operates independently**, capable of binding to different agents and accounts
 
-- **Adaptive Theme:** Supports light, dark mode, or follows system global settings.
-- **Auto-start on Boot:** Supports configuring automatic startup after system login in 【Settings → General】.
+### Plug-and-Play Skills
 
----
+Skills are the capability extension units of BAIclaw:
 
-## Quick Start
+- Built-in skill panel, no package manager or command line required
+- Automatically deploys document processing (PDF, Excel, Word, PPT) and search skills on startup
+- Supports loading from multiple sources: built-in directory, workspace, and additional configuration directories
 
-:::info[Compatibility Note]
-- BAIclaw is built upon OpenClaw and ClawX. If you have previously installed these applications or other derived projects, you may encounter **compatibility issues**.
-- To ensure a clean installation, we recommend **uninstalling** OpenClaw/ClawX and **deleting** their associated configuration folders (e.g., `~/.openclaw`) before proceeding.
+### Automated Workflows
+
+Achieve 7×24 autonomous operation through scheduled tasks:
+
+- Custom trigger conditions and time intervals
+- Preset task templates for quick configuration of common scenarios
+- Agents execute automatically according to schedule without manual intervention
+
+## Interface Overview
+
+BAIclaw's main interface consists of the following functional modules, working together to form a complete workflow:
+
+
+| Module              | Purpose                                  | Typical Use Case                                   |
+| ------------------- | ---------------------------------------- | -------------------------------------------------- |
+| **Chat**            | Real-time conversation with AI agents    | Daily Q&A, multi-turn discussions, task delegation |
+| **Models**          | Configure AI models and API keys         | Adding BANK OF AI API Key                          |
+| **Agents**          | Manage multiple agent configurations     | Creating an agent specialized for code review      |
+| **Channels**        | Connect external communication platforms | Integrating agents into Telegram groups            |
+| **Skills**          | Install and manage capability extensions | Adding browser automation skills                   |
+| **Scheduled Tasks** | Create timed automation tasks            | Setting up daily morning report generation         |
+| **Settings**        | Application global configuration         | Appearance theme, proxy settings, auto-start       |
+
+
+## Getting Started
+:::warning[Compatibility Note]
+If you have previously installed OpenClaw or ClawX, we recommend uninstalling and deleting the configuration directory (`~/.openclaw`) to avoid conflicts.
 :::
 
-### System Requirements
+If you're new to BAIclaw, we recommend following this order:
 
-- **Operating System:** macOS 11+
-- **Memory:** Minimum 4GB RAM (8GB recommended)
-- **Storage:** 1GB available disk space
+1. **Install the App**: Ensure your system is macOS 11+ with 4GB+ RAM
+2. **Complete the Wizard**: Follow the setup wizard on first launch to complete basic configuration
+3. **Get API Key**: Visit [Get API Key](./Get-API-Key.md) to obtain your BANK OF AI access key
+4. **Start Chatting**: Have your first conversation with an agent on the Chat page
 
-### First Launch
 
-When launching BAIclaw for the first time, the **Setup Wizard** will guide you through the following steps:
 
-1. **Language & Region** – Configure your preferred language and region
-2. **Add BANK OF AI Model** – Enter the BANK OF AI API Key to get top-tier large model capabilities (see: [Get API Key](./Get-API-Key.md))
-3. **Skill Pack** – Choose pre-configured skills for common scenarios
-4. **Verification** – Test your configuration before entering the main interface
+## Further Reading
 
----
-
-## Core Pages
-
-| Page | Description |
-|------|-------------|
-| **Chat** | The core interface for real-time conversation with AI agents, supporting multi-turn dialogue, message rendering, and input interaction |
-| **Models** | Configure and manage AI model provider (BANK OF AI), set API Key |
-| **Agents** | Add and manage multiple AI agents |
-| **Channels** | Connect and manage external communication platforms (Telegram, Discord, etc.), enabling message sending and receiving |
-| **Skills** | Install and manage AI skills/plugins, extending agent capabilities (such as browser control, file processing, etc.) |
-| **Scheduled Tasks** | Create and manage automated scheduled tasks, periodically triggering AI to execute workflows, achieving 7×24 hour uninterrupted operation |
-| **Settings** | Global application configuration, including appearance, notifications, proxy, and other advanced options |
+- [OpenClaw Official Documentation](https://docs.openclaw.ai/) — Learn about the underlying runtime
+- [ClawX Project Page](https://github.com/ValueCell-ai/ClawX) — Reference for skill development
