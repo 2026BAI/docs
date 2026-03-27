@@ -1,6 +1,4 @@
 ---
-id: baiclaw-intro
-title: BAIclaw 简介
 sidebar_position: 1
 slug: /
 ---
@@ -91,7 +89,7 @@ BAIclaw 的主界面由以下功能模块组成，各模块相互配合形成完
 
 1. **安装应用**：确保系统为 macOS 11+，内存 4GB 以上
 2. **完成向导**：首次启动时跟随设置向导完成基础配置
-3. **获取 API 密钥**：访问 [获取 API 密钥](./Get-API-Key.md) 获取 BANK OF AI 访问密钥
+3. **获取 API 密钥**：访问 [获取 API 密钥](./operation-guide/Get-API-Key.md) 获取 BANK OF AI 访问密钥
 4. **开始对话**：在 Chat 页面与智能体进行第一次对话
 
 ## 延伸阅读

@@ -1,6 +1,4 @@
 ---
-id: baiclaw-intro
-title: BAIclaw Intro
 sidebar_position: 1
 slug: /
 ---
@@ -93,7 +91,7 @@ If you're new to BAIclaw, we recommend following this order:
 
 1. **Install the App**: Ensure your system is macOS 11+ with 4GB+ RAM
 2. **Complete the Wizard**: Follow the setup wizard on first launch to complete basic configuration
-3. **Get API Key**: Visit [Get API Key](./Get-API-Key.md) to obtain your BANK OF AI access key
+3. **Get API Key**: Visit [Get API Key](./operation-guide/Get-API-Key.md) to obtain your BANK OF AI access key
 4. **Start Chatting**: Have your first conversation with an agent on the Chat page
 
 

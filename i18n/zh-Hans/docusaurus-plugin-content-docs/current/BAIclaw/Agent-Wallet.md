@@ -1,6 +1,5 @@
 ---
-sidebar_position: 3
-slug: /
+sidebar_position: 2
 ---
 
 # 智能体钱包介绍
